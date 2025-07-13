@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("minimal-ip-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30fe2f509f20da0f7239f6b1a7aac9c4e6d0cf38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39166e039546b895412422994168aec0a6b5b70f")]
 [assembly: System.Reflection.AssemblyProductAttribute("minimal-ip-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("minimal-ip-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
