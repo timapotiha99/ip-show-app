@@ -1,23 +1,21 @@
+# .github/workflows/ci-cd.yml
 name: CI/CD Pipeline
 
-#trigger
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  # CI
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      - name: Cache NuGet packages 
+      - name: Cache NuGet packages
         uses: actions/cache@v3
         with:
           path: ~/.nuget/packages
@@ -50,7 +48,6 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/ip-show-app:${{ github.sha }}
 
-  # CD
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -58,11 +55,11 @@ jobs:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.6
         with:
-          host: ${{ secrets.SRV_HOST }}       # IP 
-          username: ${{ secrets.SRV_USER }}   # SSH-user
-          key: ${{ secrets.SRV_SSH_KEY }}     # private key
+          host: ${{ secrets.SRV_HOST }}       
+          username: ${{ secrets.SRV_USER }}  
+          key: ${{ secrets.SRV_SSH_KEY }}     
           script: |
-            cd /srv/ip-show-app
-            git pull origin main
-            docker-compose pull
-            docker-compose up -d --build
+            cd /home/ubuntu/ip-show-app      
+            git pull origin main             # Pull latest changes
+            docker-compose pull              # Pull new image
+            docker-compose up -d --build     # deploy
