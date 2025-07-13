@@ -126,11 +126,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "projectUniqueName": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "projectName": "minimal-ip-app",
-      "projectPath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "projectPath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "packagesPath": "/Users/tim/.nuget/packages/",
-      "outputPath": "/Users/tim/DotNet /minimal-ip-app/obj/",
+      "outputPath": "/Users/tim/DotNet/minimal-ip-app/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tim/.nuget/NuGet/NuGet.Config"

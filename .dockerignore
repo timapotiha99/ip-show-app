@@ -1,0 +1,35 @@
+# Git and CI/CD
+.git/
+.gitignore
+.github/
+
+# .NET build artifacts
+bin/
+obj/
+*.dll
+*.pdb
+*.csproj.nuget.*
+
+# Logs and runtime data
+logs/
+logs/archive/
+
+# Environment secrets
+.env
+# IDE and OS files
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+
+
+!*Dockerfile
+!*docker-compose.yml
+!*Program.cs
+!*appsettings.json
+!*minimal-ip-app.csproj
+!*db/**
+!*nginx/**
+!*scripts/**
+!**.cs

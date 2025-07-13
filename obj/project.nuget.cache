@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jtDIiH0bvwY=",
+  "dgSpecHash": "tI/Ndfc5UJM=",
   "success": true,
-  "projectFilePath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+  "projectFilePath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
   "expectedPackageFiles": [
     "/Users/tim/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/Users/tim/.nuget/packages/npgsql/7.0.6/npgsql.7.0.6.nupkg.sha512"
@@ -12,9 +12,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "minimal-ip-app depends on Npgsql (>= 7.0.5) but Npgsql 7.0.5 was not found. Npgsql 7.0.6 was resolved instead.",
-      "projectPath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "projectPath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "filePath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "libraryId": "Npgsql",
       "targetGraphs": [
         "net9.0"
@@ -24,9 +24,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Npgsql' 7.0.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
-      "projectPath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "projectPath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/tim/DotNet /minimal-ip-app/minimal-ip-app.csproj",
+      "filePath": "/Users/tim/DotNet/minimal-ip-app/minimal-ip-app.csproj",
       "libraryId": "Npgsql",
       "targetGraphs": [
         "net9.0"
