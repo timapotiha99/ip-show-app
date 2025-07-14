@@ -7,7 +7,7 @@ Project Evolution
    Started from the official minimal .NET Web API template
 
 2. **Multi-stage Dockerfile**  
-   - **Build stage**:Build stage: Restored dependencies (dotnet restore) and published release artifacts (dotnet publish)
+   - **Build stage**: Restored dependencies (dotnet restore) and published release artifacts (dotnet publish)
    - **Runtime stage**: Used the lightweight ASP.NET runtime image and copied only published output
 
 3. **Support Scripts**  
